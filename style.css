@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    background: rgb(130, 125, 107);
+    color: rgb(240, 246, 244);
+}
+.cal{
+    display: grid;
+    width: 25%;
+    margin: 10% 0 0 35%;
+    padding: 1%;
+    gap: 2%;
+    height: 500px;
+    /* background: rgb(207, 12, 12); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /* border: 2px solid whitesmoke; */
+    box-shadow: 2px 5px 25px black;
+}
+.box1{
+    grid-column: span 4;
+    
+}  
+.box1 input{
+    height: 90%;
+    width: 100%;
+    border-radius: 5%;
+    padding-left: 2%;
+    color: rgb(17, 15, 15);
+
+    background: rgba(239, 243, 239, 0.66);
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button{
+    height:90% ;
+    width: 90% ;
+    box-shadow: 2px 5px 10px rgb(43, 33, 33);
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width:900px) {
+   
+    .cal {
+        margin:10% 0 0 30%;
+            width: 40%;
+            height: 450px;
+        }
+    }
+    @media (max-width:600px) {
+        .cal {
+            margin:15% 0 0 22%;
+            
+                width: 55%;
+                height: 400px;
+            }
+        }
+    @media (max-width:500px) {
+        .cal {
+            margin:15% 0 0 15%;
+            
+                width: 60%;
+                height: 400px;
+            }
+        }
+     @media (max-width:380px) {
+    .cal{
+        margin: 10% 0 0 10%;
+        width:70%;
+    }        
+     }  
